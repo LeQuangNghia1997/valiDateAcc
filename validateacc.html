@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateAcc(str) {
+        pattern = /^[_a-z0-9]{6,}$/;
+        if(pattern.test(str)){
+            return true;
+        }
+        return false;
+    }
+    var acc = "123456"
+    console.log(validateAcc(acc))
+</script>
+</body>
+</html>
+
+  /^[CAP][A-Za-z0-9]{4}[GHIKLM]*$/
+/^[CAP][0-9]{4}[GHIKLM]*$/
